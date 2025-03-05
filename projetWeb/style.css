@@ -1,0 +1,58 @@
+.container{
+    height: 650px;
+    width: 650px;
+    background-color: red;
+
+    /* display permet de dire comment doivent se comporter les elements contenu dans un certain element (ici container)*/
+    display: flex; /* flex; inline; block; contents; etc. */
+
+    /* permet de justifier les elements au sein de .container */
+    justify-content: space-between;
+}
+
+.green, .blue, .orange{
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.green{
+    background-color: #cef959;
+}
+
+.blue{
+    background-color: #84d2e9;
+    position: relative; /* relative; absolute; fixed; */
+    top: 10px;
+    left: 10px;
+}
+
+.orange{
+    background-color: #eeab59;
+}
+
+h1{
+    /*Couleurs*/
+    color: red; /* pour le couleur du texte*/
+    background-color: yellow; /*pour la couleur de l'arriere plan*/
+
+    /*typographie*/
+    font-size: 26px; /* pour la taille du texte */
+    font-family: Arial, Helvetica, sans-serif; /* pour la police du texte */
+    text-align: center; /* pour l'alignement du texte */
+}
+
+/* les pseudo class, :hover, etc. permet d'ajouter des effets quand on iteragit avec un element*/
+/* hover permet d'ajouter des effet au moment du survole de la souris sur un lien ou autres element*/
+a:hover{
+    background-color: green;
+}
+
+/* les pseudo element, ::before, etc. */
+/* before permet d'ajouter du contenu avant un autre element */
+div::before{
+    content: ' ';
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+}

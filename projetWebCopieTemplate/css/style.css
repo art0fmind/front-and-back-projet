@@ -1,0 +1,122 @@
+:root{
+    --color-primary: #979797;
+    --color-light: #f1f1f1;
+    --color-white:#fff;
+    --box-shadow: #000;
+    --color-info-dark: #5c5c5c;
+    --color-danger: red;
+
+    --border-radius-1: 15px;
+}
+
+aside{
+    height: 100vh;
+}
+
+aside .toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+aside .toggle .logo{
+    display: flex;
+    align-items: center;
+    gap: 6.4px;
+}
+
+aside .toggle .logo img{
+    width: 25.6px;
+    height: 25.6px;
+}
+
+aside .toggle .close{
+    padding-right: 12.8px;
+    display: none;
+}
+
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    box-shadow: #000; /*var(--box-shadow);*/
+    border-radius: 15px;
+    height: 88vh;
+    position: relative;
+    top: 19.2px;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar:hover{
+    box-shadow: none;
+    top: 5px;
+}
+
+aside .sidebar a{
+    display:flex;
+    align-items:center;
+    color: var(--color-info-dark);
+    height: 47.36px;
+    gap: 12.8px;
+    position:relative;
+    margin-left: 25.6px;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar a span{
+    font-size: 20.48px;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 25.6px;
+    width: 100px;
+}
+
+aside .sidebar a.active{
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    /* margin: 0;*/
+    width: 100%;
+}
+
+aside .sidebar a.active::before{
+    content: '';
+    width: 6px;
+    height: 10px;
+    background-color: var(--color-primary);
+}
+
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    /*
+    margin-left: calc(1rem - 3px);
+    */
+    margin-left: calc(3px - 1rem);
+}
+
+aside .sidebar a:hover{
+    color: var(--color-primary);
+}
+
+aside .sidebar a:hover span{
+    margin-left: 7.68px;
+}
+
+aside .sidebar .message-count{
+    background-color: var(--color-danger);
+    padding: 2px 6px;
+    color: var(--color-white);
+    font-size: 11px;
+    border-radius: var(--border-radius-1);
+}
+
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 23px;
+    grid-template-columns: 154px auto 295px;
+}

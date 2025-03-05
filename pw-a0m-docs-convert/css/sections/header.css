@@ -1,0 +1,71 @@
+header nav{
+    display: flex;
+    overflow: hidden;
+}
+
+header nav .logo{
+    flex: 1.03;
+    position: relative;
+    padding: 20px;
+}
+
+header nav .logo-overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+
+    background-color: var(--glass);
+    z-index: -1;
+}
+
+header nav .logo h4{
+    padding-left: 30px;
+
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: var(--font-1);
+    color: var(--white);
+}
+
+header nav .menu,
+header nav .auth,
+header nav .menu-mobile{
+    padding: 20px;
+    flex: 1.236;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav .menu button,
+header nav .auth button{
+    background-color: var(--glass);
+    border-radius: 12px;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    line-height: 20px;
+
+    text-transform: uppercase;
+    font-family: var(--font-2);
+    color: var(--white);
+
+    cursor: pointer;
+}
+
+header nav .menu button:hover,
+header nav .auth .login:hover,
+header nav .auth button:nth-child(2){
+    color: var(--black);
+}
+
+header nav .auth button:nth-child(2):hover{
+    color: var(--white);
+}
+
+header nav .menu-mobile{
+    display: none;
+}

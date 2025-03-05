@@ -1,0 +1,31 @@
+/* import fonts */
+
+/* import html sections */
+
+@import url(sections/header.css);
+
+/* code now... */
+:root{
+    --font-1: serif;
+    --font-2: serif;
+
+    --glass: transparent;
+    --white: #fff;
+    --black: #000;
+
+    --desktop: url(../assets/Monument_valley_by_orbitelambda.jpg);
+    --desktop-flou-1: url();
+    --desktop-flou-2: url();
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-container{
+    background: var(--desktop);
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+}
