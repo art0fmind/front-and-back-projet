@@ -41,8 +41,14 @@ header nav .menu-mobile{
 
 header nav .menu button,
 header nav .auth button{
+    padding: 9px 20px;
+    margin: 0px 2px;
+
     background-color: var(--glass);
     border-radius: 12px;
+
+    backdrop-filter: blur(10px); /* Flou appliqué à l'arrière-plan */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilité avec Safari */
 
     font-weight: 500;
     font-size: 16px;
@@ -53,8 +59,22 @@ header nav .auth button{
     font-family: var(--font-2);
     color: var(--white);
 
+    border-radius: 50px;
+    border: 1px solid var(--white-2);
+    outline: none;
+
     cursor: pointer;
 }
+/*
+
+
+background: var(--gray-15);
+color: var(--secondary-color);
+
+font-family: var(--open-sans);
+line-height: 23px;
+
+*/
 
 header nav .menu button:hover,
 header nav .auth .login:hover,

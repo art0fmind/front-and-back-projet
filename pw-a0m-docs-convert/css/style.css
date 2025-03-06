@@ -1,26 +1,42 @@
 /* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* import html sections */
 
 @import url(sections/header.css);
+@import url(sections/current-panels.css);
+
 
 /* code now... */
 :root{
-    --font-1: serif;
-    --font-2: serif;
+    --font-1: Roboto, serif;
+    --font-2: Poppins, serif;
 
-    --glass: transparent;
+    --glass: rgba(255, 255, 255, 0.205) ;
+    --glass-2: rgba(22, 22, 22, 0.158);
+    --glass-3: rgba(22, 22, 22, 0.644);
     --white: #fff;
+    --white-2: rgba(255, 255, 255, 0.288);
+    --white-3: rgba(255, 255, 255, 0.781);
     --black: #000;
+
+    --blue: rgba(0, 140, 255, 0.8);
 
     --desktop: url(../assets/Monument_valley_by_orbitelambda.jpg);
     --desktop-flou-1: url();
     --desktop-flou-2: url();
+
+    --cpb-header-height: 40px;
+    --cpb-header-width: 285px;
+    --cpb-body-width: 712px;
 }
 
 *{
     margin: 0;
     box-sizing: border-box;
+
+    font-family: var(--font-2);
+    color: var(--white);
 }
 
 .bg-container{

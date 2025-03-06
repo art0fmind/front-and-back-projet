@@ -1,0 +1,224 @@
+.containt-current-panels{
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.current-panels{
+    margin: 10px;
+    padding: 25px 15px;
+    border-radius: 33px;
+    /* border: 1px solid var(--white); */
+
+    width: 75vw;
+
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(to right, var(--glass), var(--glass-2));
+    /* background-color: var(--glass); */
+    backdrop-filter: blur(20px); /* Flou appliqué à l'arrière-plan */
+    -webkit-backdrop-filter: blur(20px); /* Compatibilité avec Safari */
+    
+    border: 1px solid var(--white-2); /* Bordure transparente pour voir le gradient */
+    /* border-image-source: linear-gradient(to bottom right, var(--white-3), var(--white-2));
+    border-image-slice: 1; /* Applique le dégradé sur toute la bordure */
+    
+}
+
+
+
+
+
+
+
+
+
+/* begin img size initialising --------------------- */
+.current-panels img{
+    width: 25px;
+    height: 25px;
+}
+
+
+.current-panels-body .cpb-header img{
+    width: 18px;
+    height: 18px;
+}
+
+.paste-button img{
+    width: 30px;
+    height: 30px;
+}
+/* end img size initialising ------------------------ */
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* begin current-panels-header --------------------- */
+.current-panels-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.control{
+    display: flex;
+    justify-content: space-between;
+}
+.cph-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containt-close{
+    margin-left: 20px;
+}
+
+.current-panels-header button{
+    background: transparent;
+    border: 1px solid var(--white-2);
+
+    padding: 9px 20px;
+    margin: 0px 2px;
+    border-radius: 20px;
+
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+.cph-social button:last-child{
+    background: var(--blue);
+    border: none;
+}
+
+.share{
+    border: 1px solid var(--white-2);
+    display: flex;
+    justify-content: center;  /* Centre horizontalement */
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.close{
+    border: 1px solid var(--white-2);
+    display: flex;
+    justify-content: center;  /* Centre horizontalement */
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: var(--white-2);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* begin current-panels-body ----------------------- */
+.current-panels-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+    margin: 10px;
+
+    position: relative;
+}
+
+.cpb-header{
+    display: flex;
+    justify-content: space-between;
+
+    width: 40%;
+    height: fit-content; /* a peu pres 54px, --cpb-header-height */
+    border-radius: 30px;
+
+    margin-left: calc((var(--cpb-body-width) - var(--cpb-header-width)) / 2);
+    border: 1px solid var(--white-2);  /* Pour voir le contour */
+    
+    position: absolute; /* Le rend flottant par rapport à .cpb-body */
+    top: 0; /* L'aligne en haut du parent */
+    left: 0;
+
+    background: linear-gradient(to right, var(--glass), var(--white-2));
+    backdrop-filter: blur(20px); /* Effet de flou */
+    -webkit-backdrop-filter: blur(10px);
+
+    padding-top: 5px;
+    z-index: 10; /* Assure qu'il soit bien au-dessus */
+
+}
+
+.cpb-header .tools1{
+    width: 27%;
+}
+.cpb-header .tools2{
+    width: 35%;
+}
+.cpb-header .tools3{
+    width: 20%;
+}
+
+.tools1, .tools2, .tools3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 2px;
+    padding: 2px;
+}
+
+.cpb-header button{
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    outline: none;
+    cursor: pointer; /* Pour garder le comportement d'un bouton */
+}
+
+
+.cpb-body{
+    padding-top: 60px; /* Décale son contenu pour ne pas être recouvert */
+    margin-top: calc(var(--cpb-header-height) / 2);
+
+    height: 70%;
+    width: 100%;
+    border: 1px solid var(--white-2);
+    border-radius: 33px;
+    background: var(--glass-3);
+}
