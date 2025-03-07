@@ -16,6 +16,7 @@
     /* border: 1px solid var(--white); */
 
     width: 75vw;
+    height: 80vh;
 
     display: flex;
     flex-direction: column;
@@ -150,7 +151,7 @@
     flex-direction: column;
     align-items: center;
 
-    height: 100vh;
+    height: 100%;
     margin: 10px;
 
     position: relative;
@@ -216,7 +217,7 @@
     padding-top: 60px; /* Décale son contenu pour ne pas être recouvert */
     margin-top: calc(var(--cpb-header-height) / 2);
 
-    height: 70%;
+    height: 90%;
     width: 100%;
     border: 1px solid var(--white-2);
     border-radius: 33px;
