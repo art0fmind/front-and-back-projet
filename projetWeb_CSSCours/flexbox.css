@@ -1,0 +1,38 @@
+.base{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+.container{
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    border: 5px dashed white;
+    
+    display: flex;
+    flex-direction: row;
+    place-content: flex-start;
+    flex-wrap: wrap;
+
+    gap: 20px 10px;
+}
+
+.items{
+    width: 90px;
+    height: 90px;
+    background-color: yellow;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items span{
+    font-size: 30px;
+    font-family: "monospace", "sans-serif";
+    font-weight: 600;
+}
