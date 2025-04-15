@@ -9,7 +9,7 @@ let getMovie = () => {
     let movieName = movieNameRef.value;
     // t=${movieName}&apikey=${key}  c'est le nom du film et la variable apikey qu'on a creer dans le fichier key.js
     // j'ai utiliser des backtick `` pour mettre le lien et non des un apostrophe '
-    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+    let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
 
     // si le champ input est vide
     if(movieName.length <= 0){
